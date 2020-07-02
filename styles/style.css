@@ -3786,7 +3786,7 @@ code {
 }
 
 .tab-controls a {
-  border: solid 1px rgba(0, 0, 0, 0.07);
+  border: solid 0px rgba(0, 0, 0, 0.07);
   border-right: none;
   text-align: center;
   float: left;
@@ -3797,7 +3797,7 @@ code {
 }
 
 .tab-controls a:last-child {
-  border: solid 1px rgba(0, 0, 0, 0.07);
+  border: solid 0px rgba(0, 0, 0, 0.07);
   border-right: none !important;
 }
 
@@ -3837,6 +3837,10 @@ code {
 .tabs-circled a:last-child {
   border-top-right-radius: 30px !important;
   border-bottom-right-radius: 30px !important;
+}
+
+.underline {
+  text-decoration: underline !important;
 }
 
 /*Working Hours*/
