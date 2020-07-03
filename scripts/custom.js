@@ -28,7 +28,9 @@ $(document).ready(function(){
               $('.drop-container').addClass('show-drop-container');
               setTimeout(() => {
                 $('#buttons').removeClass('invisible');
-                $('.static-piece').addClass('invisible');  
+                $('.static-piece').addClass('invisible');
+                $('#validate').addClass('invisible');
+                $('#reject').addClass('invisible');  
             }, 300);
               $('.reset').html('now drag and drop');
               
