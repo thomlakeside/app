@@ -29,8 +29,9 @@ $(document).ready(function(){
             ["nicebluelight","#A1CCCE","#A1CCCE","#A1CCCE"],
             ["background","#F5F5F5","#F5F5F5","#F5F5F5"], 
             ["interested","#2C8C99","#2C8C99","#2C8C99"],
+            ["interestedlight","#E9F3F4","#E9F3F4","#E9F3F4"],
             ["rejected","#C44900","#C44900","#C44900"],
-            ["context","#2B303A","#2B303A","#2B303A"],
+            ["context","#11383D","#11383D","#11383D"],
             ["contextlight","#5F6B81","#5F6B81","#5F6B81"],
             ["nicebeige","#F3DFC1","#F3DFC1","#F3DFC1"],
             ["nicered","#CC3F0C","#CC3F0C","#CC3F0C"],
@@ -1095,7 +1096,7 @@ $(document).ready(function(){
                         data: {
                           labels: ["< 150K€", "150 - 200K€", ">200K€"],
                           datasets: [{
-                            backgroundColor: ["#4A89DC", "#4FC1E9", "#A0D468"],
+                            backgroundColor: ["#C44900", "#2C8C99", "#F5F5F5"],
                             borderColor:"rgba(255,255,255,0.5)",
                             data: [7000,3000,2000]
                           }]
