@@ -16,6 +16,73 @@ $(document).ready(function(){
         //Do not put inside HTML files.
         //The init_template() function will be triggered when pages open.
         
+
+
+        $(document).ready(function() {
+  
+            var blocker = 0;
+            
+            $('.animation-piece').on('click', function() {
+              $('.animation-piece').removeClass('non-animated');
+              $('.animation-piece').addClass('animated');
+              $('.drop-container').addClass('show-drop-container');
+              $('.reset').html('now drag and drop');
+              
+              if (blocker === 0) {
+                function addDiv() {
+          
+                  for (var i = 0; i < 3; i++) {
+                    $('<div class="box"></div>').appendTo('.animation-piece').hide().fadeIn(400);  
+                  }
+          
+                  $('.box').draggable({
+                    revert: "invalid",
+                    snap: ".drop"
+                  });
+                  
+                  var counter = 0;
+          
+                  $('.drop').droppable({
+                    accept: ".box",
+                    hoverClass: "drop-hover",
+                    drop: function(event, ui) {
+                      $('.reset').html('Excellent!');
+                      // console.log(event);
+                      counter++;
+                      console.log('counter = ' + counter);
+                      
+                      if (counter === 3) {
+                        $('.animation-piece').addClass('endColor').html('See Beyond');
+                        $('.reset').html('click the blue line');
+                      }
+                    }
+                  });
+                }
+              }
+              setTimeout(addDiv, 200);
+              
+              blocker = 1;
+              
+            });
+            
+            
+            
+            $('.static-piece').on('click', function() {
+              $('.animation-piece').removeClass('animated');
+              $('.animation-piece').removeClass('endColor');
+              $('.animation-piece').addClass('non-animated');
+              $('.animation-piece').empty();
+              $('.drop-container').removeClass('show-drop-container');
+              $('.reset').html('click above');
+              blocker = 0;
+            });
+            
+          });
+
+
+
+
+
                
         //Generating Dynamic Styles to decrease CSS size and execute faster loading times. 
         var colorsArray = [
