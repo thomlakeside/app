@@ -6017,21 +6017,21 @@ html.lb-disable-scrolling {
 }
 
 .animation-piece {
-  width: 8px;
-  height: 50px;
+  width: 10px;
+  height: 44px;
   background-color: #2C8C99;
   border-radius: 5px;
   margin: 0 auto;
   text-align: center;
   position: relative;
-  top: -12px;
+  top: -13px;
   z-index: 1;
   cursor: pointer;
 }
 
 .static-piece {
-  height: 8px;
-  width: 50px;
+  height: 10px;
+  width: 44px;
   background-color: #2C8C99;
   border-radius: 5px;
   margin: 0 auto;
@@ -6061,7 +6061,7 @@ html.lb-disable-scrolling {
   0% { top: -55px; width: 175px; }
   30% { top: -55px; width: 8px; }
 
-  100% { top: -12px; width: 8px; }
+  100% { top: -13px; width: 8px; }
 }
 
 @keyframes fadeIn {
