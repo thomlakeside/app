@@ -26,6 +26,9 @@ $(document).ready(function(){
               $('.animation-piece').removeClass('non-animated');
               $('.animation-piece').addClass('animated');
               $('.drop-container').addClass('show-drop-container');
+              setTimeout(() => {
+                $('#buttons').removeClass('invisible');
+              }, 300);
               $('.reset').html('now drag and drop');
               
               if (blocker === 0) {
@@ -73,6 +76,7 @@ $(document).ready(function(){
               $('.animation-piece').addClass('non-animated');
               $('.animation-piece').empty();
               $('.drop-container').removeClass('show-drop-container');
+              $('#buttons').addClass('invisible');
               $('.reset').html('click above');
               blocker = 0;
             });
