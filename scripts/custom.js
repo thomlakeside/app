@@ -29,11 +29,11 @@ $(document).ready(function(){
               setTimeout(() => {
                 $('#buttons').removeClass('invisible');
                 $('.static-piece').addClass('invisible');
-                $('#validate').addClass('invisible');
-                $('#reject').addClass('invisible');  
-            }, 300);
+ 
+            }, 350);
               $('.reset').html('now drag and drop');
-              
+              $('#validate').addClass('invisible');
+              $('#reject').addClass('invisible'); 
               if (blocker === 0) {
                 function addDiv() {
           
