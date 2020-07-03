@@ -6024,7 +6024,7 @@ html.lb-disable-scrolling {
   margin: 0 auto;
   text-align: center;
   position: relative;
-  top: -15px;
+  top: -12px;
   z-index: 1;
   cursor: pointer;
 }
@@ -6054,7 +6054,7 @@ html.lb-disable-scrolling {
 @keyframes rise {
   0% { top: 0; }
   30% { top: -55px; width: 8px; }
-  100% { top: -55px; width: 300px; }
+  100% { top: -55px; width: 300px; background-color: #E9F3F4; }
 }
 
 @keyframes revert {
@@ -6121,3 +6121,8 @@ html.lb-disable-scrolling {
   transition: .5s;
   box-shadow: 0px 0px 45px 5px rgba(35,174,255,1);
 }
+
+.invisible {
+  display: none;
+}
+
