@@ -6019,7 +6019,7 @@ html.lb-disable-scrolling {
 .animation-piece {
   width: 10px;
   height: 44px;
-  background-color: #2C8C99;
+  background-color: #118fb0;
   border-radius: 5px;
   margin: 0 auto;
   text-align: center;
@@ -6032,7 +6032,7 @@ html.lb-disable-scrolling {
 .static-piece {
   height: 10px;
   width: 44px;
-  background-color: #2C8C99;
+  background-color: #118fb0;
   border-radius: 5px;
   margin: 0 auto;
   text-align: center;
@@ -6099,7 +6099,7 @@ html.lb-disable-scrolling {
   width: 175px;
   opacity: 0;
   padding: 23px 21px;
-  margin: 0 auto 7em auto;
+  margin: 0 auto 1em auto;
   border-radius: 5px;
   transition: 1s;
 }
