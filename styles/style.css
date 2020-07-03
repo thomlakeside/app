@@ -77,7 +77,7 @@ p {
 
 
 .linespace {
- line-height: 25px; 
+ line-height: 30px; 
  margin-left: 20px;
 }
 
@@ -1170,6 +1170,10 @@ p {
 
 .font-40 {
   font-size: 40px !important;
+}
+
+.font-50 {
+  font-size: 50px !important;
 }
 
 /*Scaling Animation*/
@@ -5984,4 +5988,136 @@ html.lb-disable-scrolling {
 
 .owl-dots-no-footer .owl-dots {
   transform: translateY(-18px) !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+#container {
+  padding-top: 2em;
+}
+
+.plus-container {
+  width: auto;
+  height: auto;
+}
+
+.animation-piece {
+  width: 8px;
+  height: 75px;
+  background-color: deepskyblue;
+  border-radius: 5px;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  top: 0;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.static-piece {
+  height: 8px;
+  width: 75px;
+  background-color: deepskyblue;
+  border-radius: 5px;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  top: -40px;
+  cursor: pointer;
+}
+
+.animated {
+  animation: rise .5s 1 forwards;
+/*   animation-delay: .5s; */
+}
+
+.non-animated {
+  animation: revert .5s 1 forwards;
+/*   animation-delay: .5s; */
+}
+
+@keyframes rise {
+  0% { top: 0; }
+  30% { top: -55px; width: 8px; }
+  100% { top: -55px; width: 300px; }
+}
+
+@keyframes revert {
+  0% { top: -55px; width: 175px; }
+  30% { top: -55px; width: 8px; }
+
+  100% { top: 0; width: 8px; }
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  50% { opacity: 1; }
+}
+
+.box {
+  width: 30px;
+  height: 30px;
+  background-color: white;
+  display: inline-block;
+  margin: 23px 5px 0;
+  border-radius: 8px;
+}
+
+.reset {
+  color: #fff;
+  text-align: center;
+  margin-top: 3em;
+  font-family: futura;
+}
+
+.endColor {
+  background-color: salmon;
+  transition: .5s;
+  color: white;
+  font-family: futura;
+  padding-top: 25px;
+}
+
+.drop-container {
+  border: 1px solid white;
+  height: 75px;
+  width: 175px;
+  opacity: 0;
+  padding: 23px 21px;
+  margin: 0 auto 7em auto;
+  border-radius: 5px;
+  transition: 1s;
+}
+
+.show-drop-container {
+  opacity: 1;
+}
+
+.drop {
+  width: 30px;
+  height: 30px;
+  border: 1px solid white;
+  border-radius: 8px;
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.drop-hover {
+  transition: .5s;
+  box-shadow: 0px 0px 45px 5px rgba(35,174,255,1);
 }
