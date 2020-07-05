@@ -6017,8 +6017,8 @@ html.lb-disable-scrolling {
 }
 
 .animation-piece {
-  width: 10px;
-  height: 44px;
+  width: 6px;
+  height: 26px;
   background-color: #118fb0;
   border-radius: 5px;
   margin: 0 auto;
@@ -6030,14 +6030,14 @@ html.lb-disable-scrolling {
 }
 
 .static-piece {
-  height: 10px;
-  width: 44px;
+  height: 6px;
+  width: 26px;
   background-color: #118fb0;
   border-radius: 5px;
   margin: 0 auto;
   text-align: center;
   position: relative;
-  top: -40px;
+  top: -29px;
   cursor: pointer;
 }
 
@@ -6053,8 +6053,8 @@ html.lb-disable-scrolling {
 
 @keyframes rise {
   0% { top: 0; }
-  30% { top: -55px; width: 8px; }
-  100% { top: -55px; width: 300px; background-color: #E9F3F4; }
+  30% { top: 0px; width: 8px; }
+  100% { top: -20px; left:-150px; width: 300px; background-color: #E9F3F4; }
 }
 
 @keyframes revert {
